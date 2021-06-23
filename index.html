@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Up Shape Out Lab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    
+        <form class ="addShapeForm">
+            <h2 id ="title">Add a Shape!</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="makeRectangle">Rectangle:</label>
+                    <input type="text" class="myRectangle" id="recWidth" placeholder="Width px">
+                    <input type="text" class="myRectangle" id="recHeight" placeholder="Height px">
+                    <input type="submit" value="Create Rectangle" id="createRectangle">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="makeSquare">Square:</label>
+                    <input type="text" class="mySquare" id="squareSideLength" placeholder="Side Length px">
+                    <input type="submit" value="Create Square" id="createSquare">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="makeCircle">Circle:</label>
+                    <input type="text" class="myCircle" id="circleRadius"  placeholder="Radius px">
+                    <input type="submit" value="Create Circle" id="createCircle">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="makeTriangle">Triangle:</label>
+                    <input type="text" class="myTriangle" id="triangleHeight"  placeholder="Height px">
+                    <input type="submit" value="Create Triangle" id="createTriangle">
+                </div>
+            </div>
+        </form>
+        
+        
+        <form class="sidepanel" id="measureShape">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="shapeName">Shape Name:</label>
+                    <div id = "myShapeName"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="shapeWidth">Width:</label>
+                    <div id="myShapeWidth"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="shapeHeight">Height:</label>
+                    <div id="myShapeHeight"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="shapeRadius">Radius:</label>
+                    <div id="myShapeRadius"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="shapeArea">Area:</label>
+                    <div id="myShapeArea"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="shapePerimeter">Perimeter:</label>
+                    <div id="myShapePerimeter"></div>
+                </div>
+            </div>
+        </form>
+        
+        <div class="shapeCanvas" id="myCanvas"></div>
+        
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
